@@ -37,13 +37,15 @@ if __name__ == '__main__':
     website_entry = Entry(
         width=35, 
         font=("Arial", 12), 
-        bd=2, relief="groove")
+        bd=2, 
+        relief="groove")
     website_entry.grid(row=1, column=0, columnspan=2, padx=10, pady=10)
     website_entry.focus()
     
     add_button = Button(
         text="Gerar QR Code", 
-        bg="black", fg="white", 
+        bg="black",
+        fg="white", 
         font=("Arial", 10, "bold"),
         width=36,
         cursor="hand2",
