@@ -29,10 +29,15 @@ if __name__ == '__main__':
     window.title("Gerador de Código QRCode")
     window.config(padx=10, pady=100)
 
-    website_label = Label(text="Digite uma URL", font=("Arial", 12))
+    website_label = Label(
+        text="Digite uma URL", 
+        font=("Arial", 12))
     website_label.grid(row=0, column=0, columnspan=2)
 
-    website_entry = Entry(width=35, font=("Arial", 12), bd=2, relief="groove")
+    website_entry = Entry(
+        width=35, 
+        font=("Arial", 12), 
+        bd=2, relief="groove")
     website_entry.grid(row=1, column=0, columnspan=2, padx=10, pady=10)
     website_entry.focus()
     
@@ -40,7 +45,8 @@ if __name__ == '__main__':
         text="Gerar QR Code", 
         bg="black", fg="white", 
         font=("Arial", 10, "bold"),
-        width=36, 
+        width=36,
+        cursor="hand2",
         command=generator_qr_code)
     add_button.grid(row=2, column=0, columnspan=2, padx=10, pady=10)
 
